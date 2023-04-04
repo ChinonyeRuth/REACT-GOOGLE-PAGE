@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cantarell', sans-serif;
+  background-color: white;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+  margin-left: auto;
+  position: absolute;
+  left: var(--side-margin);
+  top: var(--icon-vertical-margin); /* ADDED */
+  bottom: var(--icon-vertical-margin); /* ADDED */
+  position: absolute;
+  left: var(--side-margin);
+  top: var(--icon-vertical-margin);
+  bottom: var(--icon-vertical-margin);
+}
+
+.mic {
+  width: 24px;
+  height: 24px;
+}
+
+.camera {
+  width: 24px;
+  height: 24px;
+}
+
+.Searchbar {
+  position: relative;
+  display: flex;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 500px; /* increase width to 500px */
+  height: 40px;
+  margin-left: 450px;
+
+  /* --side-margin: calc(var(--border-radius) / 2);
+  --icon-vertical-margin: calc(
+    (var(--box-height) - var(--icon-size)) / 2
+  ); ADDED */
+}
+.MenuItem {
+  padding-right: 20px;
+}
+.MenuItem a {
+  padding-right: 10px;
+}
+
+.Searchbar input[type='text'] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+
+  border: var(--border-width) solid var(--dark-gray);
+  border-radius: var(--border-radius);
+  width: 443px;
+  height: 34px;
+}
+.camera {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  fill: #333;
+}
+
+.profile {
+  border-radius: 50%;
+  margin-right: 20px;
+  padding-top: 4px;
+}
+
+.AppsCollection {
+  position: absolute;
+  fill: #000;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 4px;
+  opacity: 1;
+  z-index: 999;
+
+  padding-right: 30px;
+}
+.apps {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 45px;
+  background-color: #f8f9fa;
+  padding-top: 65px;
+}
+.Language {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+.Language a {
+  color: #1a0dab;
+}
+
+.Button button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
